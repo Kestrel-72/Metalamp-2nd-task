@@ -1,5 +1,9 @@
+include blocks/text-field/text-field.pug
+
+- let textFieldDataEmail = { "label": "Email", "id": "email" };
+
 doctype html
 html
     head 
     body 
-        include blocks/text-field/text-field.pug
+        +text-field(textFieldDataEmail)

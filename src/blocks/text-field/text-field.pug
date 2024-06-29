@@ -1,3 +1,4 @@
-.text-field 
-    label.text-field__label(for="")
-    input.text-field__input(type="text")
+mixin text-field(textFieldData)
+    .text-field 
+        label.text-field__label(for=textFieldData.id)=textFieldData.label
+        input.text-field__input(type="text" id=textFieldData.id)
