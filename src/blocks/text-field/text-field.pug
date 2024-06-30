@@ -1,4 +1,8 @@
+include text-field__input/text-field__input.pug
+include text-field__label/text-field__label.pug
+
 mixin text-field(textFieldData)
     .text-field 
-        label.text-field__label(for=textFieldData.id)=textFieldData.label
-        input.text-field__input(type="text" id=textFieldData.id)
+        +text-field__label(textFieldData)
+        +text-field__input(textFieldData)
+        
